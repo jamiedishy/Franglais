@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Franglais</title>
+    <!-- <meta http-equiv="refresh" content="0; URL='http://franglais.tech'" /> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/chalk.js"></script>
+
+    <style>
+    body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #F8F8F8;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #E8E8E8;
+    color: black;
+  }
+  .topnav a.active {
+  background-color: #F8F8F8;
+  color: black;
+}
+.jumbotron {
+    background-color: #ffffff;
+    text-align: center;
+}
+.middle {
+    text-align: center;
+    background-color: #F8F8F8;
+    height: 500px;
+}
+.middle row p {
+    text-align: left;
+}
+.col-sm p {
+    padding: 30px;
+}
+.facts {
+    text-align: center;
+    padding: 30px 180px;
+}
+.facts2 {
+    padding: 0px 50px;
+}
+.page-footer {
+    background-color: #F8F8F8;
+}
+</style>
+<script type="text/javascript">
+    AmCharts.makeChart("chartdiv",
+        {
+            "type": "pie",
+            "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+            "colors": [
+                "#808080",
+                "#ff0000",
+                "#f4d499",
+                "#4d90d6",
+                "#c7e38c",
+                "#9986c8",
+                "#edf28c",
+                "#ffd1d4",
+                "#5ee1dc",
+                "#b0eead",
+                "#fef85a",
+                "#8badd2"
+            ],
+            "titleField": "country",
+            "valueField": "litres",
+            "fontFamily": "arial",
+            "fontSize": 12,
+            "color": "black",
+            "allLabels": [],
+            "balloon": {},
+            "titles": [],
+            "dataProvider": [
+                {
+                    "country": "French-Speaking",
+                    "litres": "94"
+                },
+                {
+                    "country": "Non-French Speaking",
+                    "litres": "6"
+                }
+            ]
+        }
+    );
+</script>
+
+</head>
+
+<body>
+
+        <div class="topnav">
+          <a class="active" href="#"><img border="0" alt="franglais" src="http://i64.tinypic.com/oihbtv.png" width="55" height="50"></a>
+         <br>
+          <a href="#news">About</a>
+          <a href="#contact">Impact</a>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                <a href="default.asp">
+                 <img src="http://i68.tinypic.com/33z34eg.png" width="145" height="128">
+                </a>
+                  <h1 class="display-4">Franglais</h1>
+                  <p class="lead">Become Quebecois with your own personal translator</p>
+                </div>
+               
+     <input type="file" accept="audio/*" capture id="recorder">
+     <br><br>
+                <audio id="player" controls></audio>
+  <script>
+                  var recorder = document.getElementById('recorder');
+                  var player = document.getElementById('player');
+                
+                  recorder.addEventListener('change', function(e) {
+                    var file = e.target.files[0];
+                    // Do something with the audio file.
+                    player.src =  URL.createObjectURL(file);
+                  });
+                </script>
+<br>
+
+</div>
+        
+<div class="middle">
+    <br><br>
+    <h3><i>Franglais is your personal translator to learn French fast</i></h3>
+    <br><br>
+        <div class="row">
+          <div class="col-sm">
+              <img src="record.png" width="115" height="110">
+              <br><br>
+            <em><b>Record French Audio</b></em>
+            <p align="left">Want to order your coffee like a true Quebecois? Use Franglais to teach you how! All you have to do is record your English translation and upload the audio file!</p>
+          </div>
+          <div class="col-sm">
+              <img src="translate.png" width="115" height="110">
+              <br><br>
+            <em><b>Immediate English Audio Translation</b></em>
+            <p align="left">Within seconds, hear Franglais recite the direct French translation of your request.</p>
+
+          </div>
+          <div class="col-sm">
+              <img src="result.png" width="115" height="110">
+              <br><br>
+            <em><b>Speak like a Real Quebecois</b></em>
+            <p align="left">Use Franglais to speak like a Quebecois and to learn the language quickly! No need to waste time searching for terms or mispronounciating!</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="facts">
+          <h2 align="center">"...<b>Less than 12 percent</b> of Quebec’s population learn English before French, and <b>less than 8 percent</b> speak English as their mother tongue."</h2>
+          <small>Justine Smith</small>
+          <br><br><br>
+          
+      </div>
+      <div class="facts2">
+            <h4><b>What does this mean for English-speakers in Quebec?</b></h4>
+<p>With Quebec being the home to a population that is <b>94% French-speaking</b>, Anglophones have the opportunities to partake in fresh experiences and cultures within this very country. While the adventures are limitless and the unique culture is exhillirating, <b>Anglophones are heavily prevented from contributing to Quebec society</b> due to the language barrier. <b>Whether unsuccessfully securing jobs </b>due to the language barrier, to struggling with ordering dishes at restaurants, Anglophones need to learn French, and they need to learn it fast!</p>
+<br><br>
+<p> The Ability to Conduct Conversation in French from 2006-2011
+        <div id="chartdiv" style="width: 100%; height: 400px; background-color: #F8F8F8;" ></div>
+</p>
+      </div>
+<!-- Footer -->
+<div style="height:100px"></div>
+<footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+    
+          <!--Grid row-->
+          <div class="row">
+    
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
+    
+              <!-- Form -->
+              <form class="form-inline">
+                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </form>
+              <!-- Form -->
+    
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
+    
+              <form class="input-group">
+                <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-sm btn-outline-white" type="button">Sign up</button>
+                </div>
+              </form>
+    
+            </div>
+            <!--Grid column-->
+    
+          </div>
+          <!--Grid row-->
+    
+        </div>
+        <!-- Footer Elements -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3"> Made with &hearts; by Yahya and Jamie at ConUHacks</div>
+        <p align="center">© 2019 Copyright</p>
+        <br>
+        <!-- Copyright -->
+    
+      </footer>
+      <!-- Footer -->
+
+</body>
+        
+
+
+
+<div style="height:50px"></div>
+      </html>
