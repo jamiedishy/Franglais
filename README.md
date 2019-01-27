@@ -1,5 +1,6 @@
-# Franglais
+# Franglais 
 Website for ConUHackathon project Franglais
+http://35.183.18.147/
 
 Problem: Help Anglophones navigate Quebec society given their language barrier. 
          Take into account that about 94% of the Quebec population from 2011 could carry conversation in French.
